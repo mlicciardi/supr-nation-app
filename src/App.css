@@ -1,0 +1,66 @@
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+.form-control {
+  display: block;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.expression {
+  height: 50px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.keypad_button {
+  align-items: center;
+}
+
+.operators-wrapper,
+.keypad-container,
+.operators-container,
+.buttons-container {
+  display: grid;
+
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+}
+
+.operators-wrapper,
+.operators-container {
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+}
+
+.buttons-container {
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+}
+
+.keypad-container {
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
+}
+
+.button,
+.number-button {
+  width: 100%;
+  height: 37px;
+  border-radius: 5px;
+  font-size: 25px;
+}
